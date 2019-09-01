@@ -1,3 +1,5 @@
+# http://www.rpubs.com/aj35/524124
+
 # Data-607-Assignment-Week-2
 # Please read me:  
 # 1.   The SQL Script assumes that you have installed MYSQL server >= 5.7.27 version and workbench on your computer.
