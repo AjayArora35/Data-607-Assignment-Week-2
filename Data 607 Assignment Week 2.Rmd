@@ -13,10 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #NOTE: This script makes the assumption that you have already installed MySQL on your machine.
 #The RMD script assumes that you have installed the package named: install.packages("RMySQL")
-#If RMySQL is not installed in RStudio, please remove the "#" from line 18 and re-execute.
+#If RMySQL is not installed in RStudio, please remove the "#" from line 19 and re-execute.
 #Reference: https://www.r-bloggers.com/accessing-mysql-through-r/
 ```{r}
-install.packages("RMySQL")
+#install.packages("RMySQL")
 library(RMySQL)
 ```
 
