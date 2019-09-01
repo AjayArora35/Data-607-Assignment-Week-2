@@ -1,0 +1,28 @@
+---
+title: "Data 607 Assignment Week 2"
+author: "Ajay Arora"
+date: "August 31, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+#NOTE: This script makes the assumption that you have already installed MySQL on your machine.
+#Install the necessary database packages and libraries for MySQL 
+```{r}
+install.packages("RMySQL")
+library(RMySQL)
+```
+
+```{r}
+mydb = dbConnect(MySQL(), user='ajmovieuser', password='', dbname='AjayMovies', host='localhost')
+
+rs = dbSendQuery(mydb, "select m.MovieId, m.MovieName, m.RankingPersonName, m.RankingPersonRelation, m.MovieRank, mr.MovieRankDescription from Movies m inner join MovieRanking mr on (m.MovieRank = mr.MovieRankId) ")
+
+movieranking = fetch(rs, n=-1)
+movieranking
+```
