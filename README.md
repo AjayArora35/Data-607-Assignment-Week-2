@@ -1,6 +1,6 @@
 # Data-607-Assignment-Week-2
 # Please read me:  
-# 1.   The SQL Script assumes that you have installed MYSQL server >  and workbench on your computer.
+# 1.   The SQL Script assumes that you have installed MYSQL server > 5.7.27 and workbench on your computer.
 # 2.   Please run the SQL script first.
 # 3.   The SQL script will create a database named: AjayMovies
 # 4.   The SQL script will create two tables named: Movies and MovieRanking
