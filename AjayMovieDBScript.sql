@@ -11,7 +11,7 @@ USE AjayMovies;
 CREATE TABLE Movies (
  MovieId INT NOT NULL AUTO_INCREMENT,
  MovieName VARCHAR(255) NOT NULL,
- MovieRank smallint,
+ MovieRank smallint NOT NULL,
  RankingPersonName VARCHAR(255) NOT NULL,
  RankingPersonRelation VARCHAR(255) NULL,
  PRIMARY KEY (MovieId));
@@ -37,12 +37,12 @@ GRANT ALL
 INSERT INTO Movies (MovieName, MovieRank, RankingPersonName, RankingPersonRelation)
 VALUES ('Avengers', 1, 'Aiden', 'Nephew'),
 	   ('Endgame', 1, 'Lia', 'Neice'),
-       ('The Mule', 3, 'Lauren', 'Friend'),
+       ('The Mule', 3, 'Lauren', null),
        ('A-Team', 2, 'Anju', 'Sister'),
        ('IpMan', 2, 'Bill', 'Brother-in-law'),
-       ('Aquaman', 3, 'Brian', 'Friend'),
+       ('Aquaman', 4, 'Brian', 'Friend'),
        ('Die Another Day', 4, 'Happy', 'Brother'),
-       ('Batman & Robin', 5, 'Bryan', 'Friend'),
+       ('Batman & Robin', 5, 'Bryan', null),
        ('Wild Wild West', 5, 'Dan', 'Brother-in-law'),
        ('Godzilla', 4, 'Tom', 'Brother-in-law'),
 	   ('Welcome to Marwen', 4, 'Lauren', 'Friend');
